@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&family=Roboto:wght@300;400;700;900&display=swap');
+
+
+/*  Configuracion de constantes */
+
+:root {
+
+  --colorEncabezado: #ffffff;
+  --colorPie: #000000;
+  --colorEnlace: #ffd900;
+  --colorEnlacesobre: #4c00fd;
+
+
+  /* Textos */
+
+  --textos: 'Roboto', 'sans - serif';
+  --titulos: 'lato', 'sans - serif'
+
+}
+
+
+/* Utilizar el selector universal que es (*) */
+
+* {
+  box-sizing: border-box;
+}
+
+/*   aplicar estilos a la clase .home-wrappper, no se puede escribir la palabra clase */
+
+.home-wrapper {
+  /* Imagen de fondo  */
+  background-image: url('/images/libreria.jpg');
+  background-size: cover;
+}
+
+/* Aplicar estilos a el encabezado */
+
+
+header {
+  /* Ancho  */
+  width: 100%;
+  /* Color fondo */
+  background-color: var(--colorEncabezado);
+  /* posicion del encabezado fijo */
+  position: fixed;
+  /* espaciados */
+  padding: 10px 0;
+  
+}
+
+/* Dimencionar el tamaño del logo 
+  combinar selector de etiquetas*/
+
+header img {
+  width: 150px;
+
+}
+
+/* posicionar el menu de navegacion a la derecha */
+
+header nav {
+  float: right;
+  /* margen arriba */
+  margin-top: -100px;
+}
+
+
+header nav a {
+/* Aplicar estilos a enlaces */
+color: var(--colorEnlace);
+text-decoration: none;
+margin-left: 6px;
+font-family: var(--textos);
+font-size: 1.2rem;
+}
+
